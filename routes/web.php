@@ -19,4 +19,4 @@ Route::get('/', function () {
 Route::view('/evento', 'eventos');
 Route::view('/conferencia', 'conferencias');
 Route::view('/conferencia2', 'conferencias2');
-Route::view('/columna','columna');
+Route::view('/user','user');
