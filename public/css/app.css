@@ -249,28 +249,26 @@ body {
 
 .header {
   position: fixed;
-  height: 20vh;
-  width: 100%;
+  width: 30%;
 }
 @media (max-width: 600px) {
   .header {
+    width: 100%;
     position: static;
   }
 }
-.header_content_2 {
+.header_content {
+  height: 100vh;
   background-color: #2F80ED;
-  width: 23%;
 }
 @media (max-width: 600px) {
-  .header_content_2 {
-    width: 45%;
+  .header_content {
+    height: 38vh;
   }
 }
 .header_content_navi {
   background-color: #2F80ED;
-  height: 84vh;
   padding: 20px 0px 0px 0px;
-  width: 100%;
 }
 @media (max-width: 1100px) {
   .header_content_navi {
@@ -314,6 +312,14 @@ body {
 }
 .header_content_logo img {
   width: 100%;
+}
+@media (max-width: 600px) {
+  .header_navigate {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .header_navigate_list {
   display: grid;
@@ -410,7 +416,7 @@ body {
 }
 
 .desktop {
-  width: 77%;
+  width: 100%;
 }
 @media (max-width: 600px) {
   .desktop {
@@ -439,6 +445,7 @@ body {
 }
 @media (max-width: 600px) {
   .desktop_information {
+    display: none;
     height: 14vh;
     background: #ffffff;
     justify-content: flex-end;
@@ -454,16 +461,6 @@ body {
 }
 .desktop_information_content_filter_2 {
   display: none;
-}
-@media (max-width: 600px) {
-  .desktop_information_content_filter_2 i {
-    padding-left: 35px;
-  }
-}
-@media (max-width: 350px) {
-  .desktop_information_content_filter_2 i {
-    padding-left: 20px;
-  }
 }
 @media (max-width: 600px) {
   .desktop_information_content_filter_2 {
@@ -527,15 +524,101 @@ body {
   text-transform: uppercase;
   color: #2F80ED;
 }
+.desktop_information_2 {
+  height: 20vh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width: 600px) {
+  .desktop_information_2 {
+    display: none;
+    height: 14vh;
+    background: #ffffff;
+    justify-content: flex-end;
+  }
+}
+.desktop_information_2_content_2 {
+  padding: 0px 70px;
+}
+@media (max-width: 600px) {
+  .desktop_information_2_content_2 {
+    padding: 20px;
+  }
+}
+.desktop_information_2_content_2_filter_2 {
+  display: none;
+}
+@media (max-width: 600px) {
+  .desktop_information_2_content_2_filter_2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 150px;
+    margin-bottom: 30px;
+    border: 1px solid #2F80ED;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    color: #2F80ED;
+  }
+}
+@media (max-width: 375px) {
+  .desktop_information_2_content_2_filter_2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 90px;
+    margin-bottom: 30px;
+    border: 1px solid #2F80ED;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0.5rem 0.5rem;
+    text-transform: uppercase;
+    color: #2F80ED;
+  }
+}
+.desktop_information_2_content_2_filter {
+  border: 1px solid #2F80ED;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #2F80ED;
+}
+@media (max-width: 600px) {
+  .desktop_information_2_content_2_filter {
+    display: none;
+  }
+}
+.desktop_information_2_content_2_user {
+  padding: 0.5rem 0rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #2F80ED;
+}
 
 .event {
-  padding-top: 150px;
-  width: 75%;
+  width: 70%;
 }
 @media (max-width: 600px) {
   .event {
     width: 100%;
-    padding-top: 100px;
   }
 }
 .event_content {
@@ -640,12 +723,20 @@ body {
 }
 
 .conference {
-  padding-top: 150px;
-  width: 75%;
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 600px) {
   .conference iframe {
     height: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .conference {
+    height: 62vh;
   }
 }
 @media (max-width: 600px) {
@@ -696,14 +787,20 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
 }
+@media (max-width: 600px) {
+  .event-live {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .event-live_content {
-  width: 77%;
-  height: 80vh;
+  width: 70%;
+  height: 100vh;
 }
 @media (max-width: 600px) {
   .event-live_content {
     width: 100%;
-    height: 84vh;
+    height: 62vh;
   }
 }
 .event-live_border {
@@ -717,7 +814,7 @@ body {
   }
 }
 .event-live_iframe {
-  height: 65vh;
+  height: 85vh;
 }
 @media (max-width: 600px) {
   .event-live_iframe {
@@ -726,22 +823,64 @@ body {
 }
 
 .main {
+  height: 62vh;
+}
+
+.main-user {
   height: 100vh;
-  z-index: 10;
-  position: relative;
+}
+
+.main-event {
+  width: 100%;
+  height: 100vh;
 }
 
 .register {
+  position: relative;
   height: 100vh;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+}
+@media (max-width: 600px) {
+  .register {
+    width: 100%;
+  }
 }
 .register_content {
-  width: 77%;
+  position: relative;
+  background-color: #ffffff;
+  flex-direction: column;
+  width: 100%;
   height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register_content_profile_circle {
+  position: absolute;
+  top: -50px;
+}
+.register_content_profile_circle_member img {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+.register_content_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (max-width: 600px) {
+  .register_content_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .register_content_button button {
+  cursor: pointer;
+  margin-top: 30px;
   background-color: #c4c4c4;
   padding: 1rem 3rem;
   border-radius: 8px;
@@ -750,10 +889,18 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
+.register_content_button button:active {
+  background-color: #2F80ED;
+}
 .register_content_grid input {
   border-radius: 8px;
   border: 1px solid #2F80ED;
   padding: 1rem 4.5rem 1rem 2rem;
+}
+@media (max-width: 900px) {
+  .register_content_grid input {
+    padding: 1rem 1rem 1rem 2rem;
+  }
 }
 @media (max-width: 600px) {
   .register_content {

@@ -188,25 +188,20 @@ body {
 }
 .header {
     position: fixed;
-    height: 20vh;
-    width: 100%;
+    width: 30%;
     @media(max-width: 600px) {
+        width: 100%;
         position: static;
     }
     &_content {
-        &_2 {
-            background-color: #2F80ED;
-            width: 23%;
-            @media(max-width:600px) {
-                width: 45%;
-                
-            }
+        height: 100vh;
+        background-color: #2F80ED;
+        @media(max-width: 600px) {
+            height: 38vh;
         }
         &_navi {
             background-color: #2F80ED;
-            height: 84vh;
             padding: 20px 0px 0px 0px;
-            width: 100%;
             @media(max-width: 1100px) {
                 padding: 20px 0px 0px 0px;
            }
@@ -245,7 +240,12 @@ body {
         }
     }
     &_navigate {
-       
+       @media(max-width: 600px){
+           height: 25vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
         &_list {
             display: grid;
             grid-template-columns: repeat(1,1fr);
@@ -330,7 +330,7 @@ body {
     width: 75%;
 }
 .desktop {
-    width: 77%;
+    width: 100%;
     @media(max-width: 600px) {
         width: 65%;
     }   
@@ -354,24 +354,115 @@ body {
         align-items: center;
         justify-content: space-between;
         @media(max-width: 600px) {
+            display: none;
             height: 14vh;
             background: #ffffff;
             justify-content: flex-end;
         } 
+        
         &_content {
             padding: 0px 70px;
             @media(max-width: 600px) {
                 padding:20px;
             }
             &_filter_2 {
-                i {
-                    @media(max-width: 600px) {
-                        padding-left: 35px;
+                // i {
+                //     @media(max-width: 600px) {
+                //         padding-left: 35px;
+                //     }
+                //     @media(max-width: 350px) {
+                //         padding-left: 20px;
+                //     }
+                // }
+                display: none;
+                @media(max-width:600px) {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    margin-right: 150px;
+                    margin-bottom: 30px;
+                    border: 1px solid #2F80ED;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 12px;
+                    padding: 0.5rem 1rem;
+                    text-transform: uppercase;
+                    color: #2F80ED;
                     }
-                    @media(max-width: 350px) {
-                        padding-left: 20px;
-                    }
+                    @media(max-width:375px) {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        margin-right: 90px;
+                        margin-bottom: 30px;
+                        border: 1px solid #2F80ED;
+                        box-sizing: border-box;
+                        border-radius: 8px;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 12px;
+                        padding: 0.5rem 0.5rem;
+                        text-transform: uppercase;
+                        color: #2F80ED;
+                        }
+                   
+            }
+            &_filter {
+                border: 1px solid #2F80ED;
+                box-sizing: border-box;
+                border-radius: 8px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                padding: 0.5rem 1rem;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                color: #2F80ED;
+                @media(max-width:600px) {
+                    display: none;
                 }
+            }
+            &_user {
+                padding: 0.5rem 0rem;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #2F80ED;
+            }
+            
+        }
+    }
+    &_information_2 {
+        height: 20vh;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        @media(max-width: 600px) {
+            display: none;
+            height: 14vh;
+            background: #ffffff;
+            justify-content: flex-end;
+        } 
+        
+        &_content_2 {
+            padding: 0px 70px;
+            @media(max-width: 600px) {
+                padding:20px;
+            }
+            &_filter_2 {
+                // i {
+                //     @media(max-width: 600px) {
+                //         padding-left: 35px;
+                //     }
+                //     @media(max-width: 350px) {
+                //         padding-left: 20px;
+                //     }
+                // }
                 display: none;
                 @media(max-width:600px) {
                     display: flex;
@@ -435,11 +526,9 @@ body {
     }
 }
 .event {
-    padding-top: 150px;
-    width: 75%;
+    width: 70%;
     @media(max-width: 600px) {
         width: 100%;
-        padding-top: 100px;
     }
     &_content {
         padding: 20px 0px;
@@ -536,8 +625,14 @@ body {
             height: 150px;
         }
     }
-    padding-top: 150px;
-    width: 75%; 
+    width: 70%; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(max-width:600px) {
+        height: 62vh;
+    }
     @media(max-width: 600px) {
         width: 100%;
     }
@@ -581,12 +676,16 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    @media(max-width:600px) {
+        justify-content: center;
+        align-items: center;
+    }
     &_content {
-        width: 77%;
-        height: 80vh;
+        width: 70%;
+        height: 100vh;
         @media(max-width: 600px) {
             width: 100%;
-            height: 84vh;
+            height: 62vh;
         }
     }
     &_border {
@@ -598,27 +697,65 @@ body {
         }
     }
     &_iframe {
-        height: 65vh;
+        height: 85vh;
         @media(max-width: 600px) {
             height: 84vh;
         }
     }
 }
 .main {
+    height: 62vh;
+}
+.main-user {
     height: 100vh;
-    z-index: 10;
-    position: relative;
+}
+.main-event {
+    width: 100%;
+    height: 100vh;
 }
 .register {
+    position: relative;
     height: 100vh;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    &_content {
-        width: 77%;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    @media(max-width:600px) {
+        width: 100%;
+    }
+    &_content { 
+        position: relative;
+        &_profile_circle {
+            position: absolute;
+            top: -50px;
+            &_member {
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border: 3px solid #ffffff;
+                    border-radius: 50%;
+                }
+            }
+        }
+        background-color: #ffffff;
+        flex-direction: column;
+        width: 100%;
         height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       &_grid {
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+           gap: 20px;
+           @media(max-width:600px){
+            grid-template-columns: repeat(1,1fr);    
+           }
+       }
         &_button {
             button {
+                cursor: pointer;
+                margin-top: 30px;
                 background-color: #c4c4c4;
                 padding: 1rem 3rem;
                 border-radius: 8px;
@@ -626,6 +763,9 @@ body {
                 color: #ffffff;
                 font-size: 14px;
                 font-weight: bold;
+                &:active {
+                    background-color: #2F80ED;
+                }
             }
         }
         &_grid {
@@ -633,6 +773,9 @@ body {
                 border-radius: 8px;
                 border: 1px solid #2F80ED;
                 padding: 1rem 4.5rem 1rem 2rem;
+                @media(max-width: 900px){
+                    padding: 1rem 1rem 1rem 2rem;
+                }
             }
         }
         @media(max-width: 600px) {
