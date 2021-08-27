@@ -1,5 +1,5 @@
 @include('template/header')
-<main class="main-event event-live" style="z-index: 10;position: relative;">
+<main class="main-event event-live">
     <section class="event-live_content">
         <div class="event-live_border">
         </div>

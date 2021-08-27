@@ -2,14 +2,14 @@
 <main class="main d-flex w-100 justify-end">
 
         <section class="event">
-        <div class="desktop">
+            <div class="desktop">
                 <div class="desktop_information">
                         <div class="desktop_information_content">
                             <a href="" class="desktop_information_content_filter"><i class="far fa-calendar pr-05"></i>FILTRO POR DÍA<i class="fas fa-chevron-down pl-4"></i></a>
                         </div>
                         <div class="desktop_information_content">
                             <a href="" class="desktop_information_content_user"><i class="fas fa-user-circle font-size-15 pr-05"></i>Usuario</a>
-                        </div>
+                    </div>
                 </div>
             </div>
             <div class="event_content">

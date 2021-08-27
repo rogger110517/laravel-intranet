@@ -12,6 +12,9 @@
         <div class="header_content">
                 <div class="header_content_logo">
                     <a href=""><img src="img/logo.png" alt=""></a> 
+                    <div>
+                            <a href="" class="desktop_information_content_user_2"><i class="fas fa-user-circle font-size-15 pr-05"></i>Usuario</a>
+                    </div>
                 </div>
                 <nav class="header_navigate">
                     <ul class="header_navigate_list">
