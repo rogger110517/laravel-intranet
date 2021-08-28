@@ -395,6 +395,9 @@ body {
         
         &_content {
             padding: 0px 70px;
+            @media(max-width: 900px) {
+                padding: 0px 40px;
+            }
             @media(max-width: 600px) {
                 padding:20px;
             }
@@ -499,6 +502,9 @@ body {
         
         &_content_2 {
             padding: 0px 70px;
+            @media(max-width: 900px) {
+                padding: 0px 40px;
+            }
             @media(max-width: 600px) {
                 padding:20px;
             }

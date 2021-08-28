@@ -498,6 +498,11 @@ body {
 .desktop_information_content {
   padding: 0px 70px;
 }
+@media (max-width: 900px) {
+  .desktop_information_content {
+    padding: 0px 40px;
+  }
+}
 @media (max-width: 600px) {
   .desktop_information_content {
     padding: 20px;
@@ -604,6 +609,11 @@ body {
 }
 .desktop_information_2_content_2 {
   padding: 0px 70px;
+}
+@media (max-width: 900px) {
+  .desktop_information_2_content_2 {
+    padding: 0px 40px;
+  }
 }
 @media (max-width: 600px) {
   .desktop_information_2_content_2 {
