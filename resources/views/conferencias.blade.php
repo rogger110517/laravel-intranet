@@ -9,7 +9,7 @@
                         </div>
                         <div class="desktop_information_content">
                             <a href="" class="desktop_information_content_user"><i class="fas fa-user-circle font-size-15 pr-05"></i>Usuario</a>
-                    </div>
+                        </div>
                 </div>
             </div>
             <div class="event_content">
